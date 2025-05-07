@@ -1,0 +1,22 @@
+{
+    "image": "mcr.microsoft.com/azterraform",
+  
+    "runArgs": [
+          "--cap-add=SYS_PTRACE",
+          "--security-opt",
+          "seccomp=unconfined",
+          "--init",
+          "--network=host"
+      ],
+  "postStartCommand": "sudo gpasswd -a $USER docker",
+  "mounts": [ "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind" ],
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "hashicorp.terraform",
+          "golang.Go",
+          "marp-team.marp-vscode"
+        ]
+      }
+    }
+  }
