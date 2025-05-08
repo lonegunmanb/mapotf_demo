@@ -29,7 +29,6 @@ paginate: true
 
 ## Demo
 
-`terraform apply -auto-approve`
-`terraform plan`
+`terraform init && terraform apply -auto-approve && terraform plan`
 `mapotf plan -r --mptf-dir . --tf-dir .`
 `mapotf transform -r --mptf-dir . --tf-dir .`
