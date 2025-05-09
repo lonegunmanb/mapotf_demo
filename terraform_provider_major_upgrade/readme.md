@@ -24,6 +24,9 @@ paginate: true
   - Encodes the necessary adjustments for major provider upgrades.
   - Automates the injection or modification of required attributes, arguments, or blocks.
   - Reduces the need for tedious manual editing.
+
+---
+
 - Together, they:
   - **Seamlessly apply breaking changes** across your Terraform configurations.
   - Ensure consistency, reduce risk, and accelerate upgrade timelines.
